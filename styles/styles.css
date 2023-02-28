@@ -230,8 +230,105 @@ list-style-type: disc;
     line-height: 19px;
     color: rgba(0, 0, 0, 1);
     text-transform: uppercase;
+    background-color: rgba(240, 240, 240, 1);
   }
 
   .Choosen_product_filter {
     background-color: rgba(240, 240, 240, 1);
+  }
+
+  .Choosen_product_group {
+    font-family: rubik, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .Choosen_product_filter_choose {
+    font-family: rubik, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .show_button {
+    border: 0;
+    background-image: url(/images/design_features/more_info_link.png);
+    background-repeat: none;
+    background-size: 50%;
+    background-position: 50%;
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+  }
+
+  .choosen_product_name {
+    font-family: rubik, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .choosen_product_price {
+    font-family: rubik, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .Choosen_product_filter_button {
+    background-color: rgba(240, 240, 240, 1);
+    border-color: rgba(229, 229, 229, 1);
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  .pagination_link_disabled {
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(68, 68, 68, 1);
+    background-color: rgba(229, 229, 229, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .pagination_item_link {
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(68, 68, 68, 1);
+    background-color: rgba(229, 229, 229, 1);
+    text-decoration: none;
+  }
+
+  .pagination_link {
+    font-family: raleway, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(229, 229, 229, 1);
+    text-decoration: none;
+    text-transform: uppercase;
   }
