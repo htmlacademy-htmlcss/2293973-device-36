@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
   <header class="page_header">
-    <img
-    class="logo"
-    src="images/logo/logo_main.svg"
-    alt="логотип магазина Девайс."
-    width="145"
-    height="36">
+    <a href="index.html">
+      <img
+      class="logo"
+      src="images/logo/logo_main.svg"
+      alt="логотип магазина Девайс."
+      width="145"
+      height="36">
+  </a>
       <section class="search_input">
       <form class="search_field" action="#" method="get">
         <input type="text" name="search">
@@ -75,8 +78,8 @@
   </header>
   <main class="main_inner">
     <section class="Breadcrumbs">
-      <h1>Моноподы для селфи</h1>
-      <ol class="'Chosen_product_path_list">
+      <h1 class="title_1">Моноподы для селфи</h1>
+      <ol class="Chosen_product_path_list">
         <li class="Breadcrumbs_item">
           <a class="Breadcrumbs_link" href="index.html">Главная</a>
         </li>
@@ -115,36 +118,36 @@
       <fieldset>
         <legend class="Choosen_product_group">Цвет</legend>
         <ul>
-          <li><label class="Choosen product_filter_choose">
-          <input class="Choosen product_filter_choose_input" type="checkbox" checked="checked">Черный
+          <li><label class="Choosen_product_filter_choose">
+          <input class="Choosen_product_filter_choose_input" type="checkbox" checked="checked">Черный
         </label></li>
-          <li><label class="Choosen product_filter_choose">
-          <input class="Choosen product_filter_choose_input" type="checkbox" checked="checked">Белый
+          <li><label class="Choosen_product_filter_choose">
+          <input class="Choosen_product_filter_choose_input" type="checkbox" checked="checked">Белый
         </label></li>
-          <li><label class="Choosen product_filter_choose">
-          <input class="Choosen product_filter_choose_input" type="checkbox">Синий
+          <li><label class="Choosen_product_filter_choose">
+          <input class="Choosen_product_filter_choose_input" type="checkbox">Синий
         </label></li>
-          <li><label class="Choosen product_filter_choose">
-          <input class="Choosen product_filter_choose_input" type="checkbox">Красный
+          <li><label class="Choosen_product_filter_choose">
+          <input class="Choosen_product_filter_choose_input" type="checkbox">Красный
         </label></li>
-          <li><label class="Choosen product_filter_choose">
-          <input class="Choosen product_filter_choose_input" type="checkbox">Розовый
+          <li><label class="Choosen_product_filter_choose">
+          <input class="Choosen_product_filter_choose_input" type="checkbox">Розовый
         </label></li>
       </ul>
       </fieldset>
       <fieldset>
           <legend class="Choosen_product_group">Bluetooth</legend>
           <ul>
-          <li><label class="Choosen product_filter_choose">
-            <input class="Choosen product_filter_choose_input" type="radio" checked="checked">Есть
+          <li><label class="Choosen_product_filter_choose">
+            <input class="Choosen_product_filter_choose_input" type="radio" checked="checked">Есть
           </label>
-          <li><label class="Choosen product_filter_choose">
-            <input class="Choosen product_filter_choose_input" type="radio">Нет
+          <li><label class="Choosen_product_filter_choose">
+            <input class="Choosen_product_filter_choose_input" type="radio">Нет
           </label>
         </ul>
       </fieldset>
       <form class="Choosen_product_filter" action="№" method="get">
-        <button class="button" type="submit">Показать</button>
+        <button class="show_button" type="submit">Показать</button>
       </form>
     </section>
     <section>
@@ -163,7 +166,7 @@
           height="380">
         </a>
         <b class="choosen_product_name">Любительская селфи-палка</b>
-        <p class="choosen_product_price">500 Р</p>
+        <p class="choosen_product_price">500 ₽</p>
       </li>
       <li>
         <a class="Choosen_product_filter_link" href="#">
@@ -175,7 +178,7 @@
           height="380">
         </a>
         <b class="choosen_product_name">Профессиональная селфи-палка</b>
-        <p class="choosen_product_price">1 500 Р</p>
+        <p class="choosen_product_price">1 500 ₽</p>
       </li>
       <li>
         <a class="Choosen_product_filter_link" href="#">
@@ -187,7 +190,7 @@
           height="380">
         </a>
         <b class="choosen_product_name">Непотопляемая селфи-палка</b>
-        <p class="choosen_product_price">2 500 Р</p>
+        <p class="choosen_product_price">2 500 ₽</p>
       </li>
       <li>
         <a class="Choosen_product_filter_link" href="#">
@@ -200,12 +203,12 @@
         </a>
 
         <b class="choosen_product_name">Селфи_палка «Следуй за мной»</b>
-        <p class="choosen_product_price">1 500 Р</p>
+        <p class="choosen_product_price">1 500 ₽</p>
       </li>
     </ul>
     <button class="Choosen_product_filter_button">Загрузить еще</button>
-    <div>
-      <a class="pagination_link_disabled" href="#">НАЗАД</a>
+    <div class="pagination_line">
+      <a class="pagination_link_disabled" href="#">Назад</a>
       <ul class="Pagination_list">
         <li class="pagination_item_current">
           <a class="pagination_item_link" href="#"> 1 </a>
@@ -227,14 +230,10 @@
     </div>
     </section>
   </main>
-  <footer>
+  <footer class="page_footer">
     <div>
-      <img
-      class="footer_logo"
-      src="images/logo/logo_footer.svg"
-      alt="'Желтый логотип компании"
-      width="145"
-      height="36">
+      <img class="footer_logo" src="images/logo/logo_footer.svg" alt="Желтый логотип компании" width="145"
+        height="36">
       <p class="footer_description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
     </div>
     <div>
@@ -248,45 +247,26 @@
       <ul class="footer_list">
         <li class="footer_item">
           <a class="footer_link" href="#">
-            <img
-            class="social_icon"
-            src="images/icons/telegram.png"
-            alt="Логотип Телеграмма"
-            width="40"
-            height="40">
+            <img class="social_icon" src="images/icons/telegram.png" alt="Логотип Телеграмма" width="40" height="40">
           </a>
         </li>
         <li class="footer_item">
           <a class="footer_link" href="#">
-            <img
-            class="social_icon"
-            src="images/icons/youtube.png"
-            alt="Логотип Ютуба"
-            width="40"
-            height="40">
+            <img class="social_icon" src="images/icons/youtube.png" alt="Логотип Ютуба" width="40" height="40">
           </a>
         </li>
         <li class="footer_item">
           <a class="footer_link" href="#">
-            <img
-            class="social_icon"
-            src="images/icons/twitter.png"
-            alt="Логотип Твиттера"
-            width="40"
-            height="40">
+            <img class="social_icon" src="images/icons/twitter.png" alt="Логотип Твиттера" width="40" height="40">
           </a>
         </li>
       </ul>
     </div>
     <div>
-      <a class="footer_link" href="+78128121212">Тел.: +7(812) 812-12-12</a>
+      <a class="footer_description" href="+78128121212">Тел.: +7(812) 812-12-12</a>
       <a class="footer_link" href="#">
-        <img
-        class="academy_logo"
-        src="images/logo/logo_academy.svg"
-        alt="Логотип HTML Академии"
-        width="115"
-        height="33">
+        <img class="academy_logo" src="images/logo/logo_academy.svg" alt="Логотип HTML Академии" width="115"
+          height="33">
       </a>
     </div>
   </footer>
