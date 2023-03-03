@@ -9,41 +9,44 @@
 
   <body>
     <header class="page_header">
-      <img class="logo" src="images/logo/logo_main.svg" alt="логотип магазина Девайс." width="145" height="36">
-      <section class="search_input">
-        <form class="search_field" action="#" method="get">
-          <input type="text" name="search">
-        </form>
-        <button class="search_button"> Найти </button>
-      </section>
-      <section class="login_input">
-        <ul class="login_list">
-          <li class="login_list_item">
-            <a class="login_link" href="#">
-              <img class="icon" src="images/icons/user.svg" alt="иконка пользователя" width="13" height="12">
-              Войти</a>
-          </li>
-          <li class="visually_hidden">
-            <a class="login_link" href="#">Выйти</a>
-          </li>
-          <li class="login_list_item">
-            <a class="login_link" href="#">
-              <img class="icon" src="images/icons/compare.svg" alt="иконка сравнения" width="10" height="12">
-              Сравнить</a>
-          </li>
-          <li class="login_list_item">
-            <a class="login_link" href="#">
-              <img class="icon" src="images/icons/cart.svg" alt="Иконка корзины">
-              Корзина</a>
-          </li>
-        </ul>
-      </section>
-      <section class="navigation">
+      <a class="logo_link">
+        <img class="logo" src="images/logo/logo_main.svg" alt="логотип магазина Девайс." width="145" height="36">
+      </a>
+      <div class="header_login_container">
+        <div class="search_field_container">
+          <form class="search_field" action="#" method="get">
+            <input type="text" name="search"
+              style="width:359px; height:40px; background-color: rgba(255, 225, 127, 1); border-radius: 20px 0 0 20px;border-color: rgba(0, 0, 0, 1);">
+          </form>
+          <button class="search_button"
+            style="width:160px; height:40px; background-color: rgba(255, 225, 127, 1); border-radius: 0 20px 20px 0;border-color: rgba(0, 0, 0, 1);">
+            Найти </button>
+        </div>
+        <div class="login_logout_container">
+          <ul class="login_list">
+            <li class="login_list_item user_icon">
+              <a class="login_link" href="#">Войти</a>
+            </li>
+            <li class="login_list_item">
+              <a class="visually_hidden" href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="compare_cart_container">
+          <ul class="login_list">
+            <li class="login_list_item">
+              <a class="login_link" href="#">Сравнить</a>
+            </li>
+            <li class="login_list_item">
+              <a class="login_link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navigation_container">
         <ul class="navigation_list">
           <li class="navigation_item">
-            <a class="navigation_link" href="catalog.html">Каталог товаров
-              <img class="icon" src="images/icons/catalog.svg" alt="Иконка каталога" width="50" height="50">
-            </a>
+            <a class="navigation_link_catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="navigation_item">
             <a class="navigation_link" href="#">Доставка</a>
@@ -55,124 +58,206 @@
             <a class="navigation_link" href="#">Контакты</a>
           </li>
         </ul>
-      </section>
+      </div>
     </header>
-    <main>
-      <section class="product_gallery">
-        <img class="gallery_image" src="images/gallery/drone.png" alt="Квадракоптер" width="560" height="560">
-        <!-- НУЖНО ЛИ?
-      <a class="left_arrow" href="#"> <img src="#" alt="перелистывание налево">left</a>
-      <a class="right_arrow" href="#"> <img src="#" alt="перелистывание направо">right</a>-->
-        <h1 class="title_1">Порхает как бабочка, жалит как пчела!</h1>
-        <p class="product_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-          замаскированным под стандартную камеру.</p>
-        <a class="More_info_link">Подробнее</a>
-        <p class="product_advantages">800 м</p>
-        <p class="product_advantages_description">Длительность полета</p>
-        <p class="product_advantages">50 м</p>
-        <p class="product_advantages_description">Радиус поражения</p>
+    <main class="main_container">
+      <div class="product_gallery_container">
+        <div class="gallery_image_container">
+          <img class="gallery_image" src="images/gallery/drone.png" alt="Квадракоптер" width="560" height="560">
+        </div>
+        <div class="product_gallery_description_container">
+          <div class="product_gallery_description_title_container">
+            <h1 class="title_1">Порхает как бабочка, жалит как пчела!</h1>
+          </div>
+          <div class="product_gallery_description_text_container">
+            <p class="product_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.</p>
+          </div>
+          <div class="product_gallery_description_more_info_link_container">
+            <a class="more_info_link">Подробнее</a>
+          </div>
+          <div class="product_gallery_description_product_advantages_container">
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">800 м</p>
+              <p class="product_advantages_description">Длительность полета</p>
+            </div>
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">50 м</p>
+              <p class="product_advantages_description">Радиус поражения</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=product_gallery_button_container>
         <button class="Indicator_list_checked"></button>
         <button class="Indicator_list"></button>
         <button class="Indicator_list"></button>
-        <img class="gallery_image" src="images/gallery/watch.png" alt="Фитнесс браслет" width="560" height="560">
-        <!-- НУЖНО ЛИ?
-      <a class="left_arrow" href="#"> <img src="#" alt="перелистывание налево">left</a>
-      <a class="right_arrow" href="#"> <img src="#" alt="перелистывание направо">right</a>-->
-        <h1 class="title_1">Худеем правильно!</h1>
-        <p class="product_description">Мотивирующие фитнес_браслеты помогут найти в себе силы не пропускать занятия и
-          соблюдать диету.</p>
-        <a class="More_info_link">Подробнее</a>
-        <p class="product_advantages">48 часов</p>
-        <p class="product_advantages_description">Без подзарадки</p>
+      </div>
+      <div class="product_gallery_container">
+        <div class="gallery_image_container">
+          <img class="gallery_image" src="images/gallery/watch.png" alt="Фитнесс браслет" width="560" height="560">
+        </div>
+        <div class="product_gallery_description_container">
+          <div class="product_gallery_description_title_container">
+            <h1 class="title_1">Худеем правильно!</h1>
+          </div>
+          <div class="product_gallery_description_text_container">
+            <p class="product_description">Мотивирующие фитнес_браслеты помогут найти в себе силы не пропускать занятия
+              и
+              соблюдать диету.</p>
+          </div>
+          <div class="product_gallery_description_more_info_link_container">
+            <a class="more_info_link">Подробнее</a>
+          </div>
+          <div class="product_gallery_description_product_advantages_container">
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">48 часов</p>
+              <p class="product_advantages_description">Без подзарадки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=product_gallery_button_container>
         <button class="Indicator_list"></button>
         <button class="Indicator_list_checked"></button>
         <button class="Indicator_list"></button>
-        <img class="gallery_image" src="images/gallery/selfiestick.png" alt="Селфи палка." width="560" height="560">
-        <!-- НУЖНО ЛИ?
-      <a class="left_arrow" href="#"> <img src="#" alt="перелистывание налево">left</a>
-      <a class="right_arrow" href="#"> <img src="#" alt="перелистывание направо">right</a>-->
-        <h1 class="title_1">Делай селфи, как Бен Стиллер!</h1>
-        <p class="product_description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-          метров длиной и весом всего 5 кг..</p>
-        <a class="More_info_link">Подробнее</a>
-        <p class="product_advantages">8,5 м</p>
-        <p class="product_advantages_description">Длина палки</p>
-        <p class="product_advantages">5 кг</p>
-        <p class="product_advantages_description">Вес палки</p>
-        <p class="product_advantages">Карбон</p>
-        <p class="product_advantages_description">Материал</p>
+      </div>
+      <div class="product_gallery_container">
+        <div class="gallery_image_container">
+          <img class="gallery_image" src="images/gallery/selfiestick.png" alt="Селфи палка." width="560" height="560">
+        </div>
+        <div class="product_gallery_description_container">
+          <div class="product_gallery_description_title_container">
+            <h1 class="title_1">Делай селфи, как Бен Стиллер!</h1>
+          </div>
+          <div class="product_gallery_description_text_container">
+            <p class="product_description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+              Карл!)
+              метров длиной и весом всего 5 кг..</p>
+          </div>
+          <div class="product_gallery_description_more_info_link_container">
+            <a class="more_info_link">Подробнее</a>
+          </div>
+          <div class="product_gallery_description_product_advantages_container">
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">8,5 м</p>
+              <p class="product_advantages_description">Длина палки</p>
+            </div>
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">5 кг</p>
+              <p class="product_advantages_description">Вес палки</p>
+            </div>
+            <div class="product_gallery_description_product_advantage_container">
+              <p class="product_advantages">Карбон</p>
+              <p class="product_advantages_description">Материал</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=product_gallery_button_container>
         <button class="Indicator_list"></button>
         <button class="Indicator_list"></button>
         <button class="Indicator_list_checked"></button>
-      </section>
-      <section class="product_types">
+      </div>
+      <div class="product_types_container">
         <ul class="product_types_list">
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_1.png"
                 alt="Товары категории виртуальная реальность" width="160" height="160">
-              Виртуальная реальность</a>
+              <p>Виртуальная реальность</p>
+            </a>
           </li>
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_2.png" alt="Товары категории моноподы для селфи."
                 width="160" height="160">
-              Моноподы для селфи</a>
+              <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_3.png" alt="Товары категории Экшн_камеры."
                 width="160" height="160">
-              Экшн_камеры</a>
+              <p>Экшн-камеры</p>
+            </a>
           </li>
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_4.png" alt="Товары категории Фитнес_браслеты."
                 width="160" height="160">
-              Фитнес_браслеты</a>
+              <p>Фитнес-браслеты</p>
+            </a>
           </li>
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_5.png" alt="Товары категории Умные часы"
                 width="160" height="160">
-              Умные часы</a>
+              <p>Умные часы</p>
+            </a>
           </li>
           <li class="product_types_item">
             <a class="product_types_links" href="#">
               <img class="category_icon" src="images/category/category_6.png" alt="Товары категории Квадрокоптеры"
                 width="160" height="160">
-              Квадрокоптеры</a>
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
-      </section>
-      <section class="shop_service">
-        <ul class="Shop_service_list">
-          <li class="shop_service item">
-            <button class="shop_services_button_choosen">Доставка</button>
+      </div>
+      <div class="shop_service_container">
+        <div class="shop_service_buttons_container">
+          <button class="shop_services_button_choosen">Доставка</button>
+          <button class="shop_services_buttoimgn">Гарантия</button>
+          <button class="shop_services_button">Кредит</button>
+        </div>
+        <div class="shop_service_description_container">
+          <div class="shop_service_description_title">
             <h1 class="title_1">Доставка</h1>
+          </div>
+          <div class="shop_service_description_text">
             <p class="shop_service_description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
               бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img class="shop_service_icon" src="images/services/delivery.png" alt="курьер" width="136" height="164">
-          </li>
-          <li class="shop_service item">
-            <button class="shop_services_buttoimgn">Гарантия</button>
+          </div>
+          <div class="shop_service_description_icon">
+          </div>
+        </div>
+        <div class="shop_service_description_container">
+        </div>
+      </div>
+      <div class="shop_service_container">
+        <div class="shop_service_buttons_container">
+          <button class="shop_services_button">Доставка</button>
+          <button class="shop_services_button_choosen">Гарантия</button>
+          <button class="shop_services_button">Кредит</button>
+        </div>
+        <div class="shop_service_description_container">
+          <div class="shop_service_description_title">
             <h1 class="title_1">Гарантия</h1>
+          </div>
+          <div class="shop_service_description_text">
             <p class="shop_service_description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
               переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <img class="shop_service_icon" src="images/services/warranty.png" alt="Гарантийные услуги" width="171"
-              height="195">
-          </li>
-          <li class="shop_service item">
-            <button class="shop_services_button">Кредит</button>
+          </div>
+        </div>
+      </div>
+      <div class="shop_service_container">
+        <div class="shop_service_buttons_container">
+          <button class="shop_services_button">Доставка</button>
+          <button class="shop_services_button">Гарантия</button>
+          <button class="shop_services_button_choosen">Кредит</button>
+        </div>
+        <div class="shop_service_description_container">
+          <div class="shop_service_description_title">
             <h1 class="title_1">Кредит</h1>
+          </div>
+          <div class="shop_service_description_text">
             <p class="shop_service_description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
               вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-            <img class="shop_service_icon" src="images/services/credit.png" alt="Кредитные услуги" width="156"
-              height="188">
-          </li>
-        </ul>
-      </section>
-      <section class="rare_products">
+          </div>
+        </div>
+      </div>
+      <div class="rare_products">
         <div class="rare_products_icon">
           <img class="icon" src="images/icons/rare_delivery.svg" alt="Эксклюзиваня доставка" width="47" height="31">
         </div>
@@ -180,13 +265,15 @@
         <div class="rare_products_info">
           <img class="icon" src="images/icons/info.svg" alt="Дополнительная информация" width="40" height="40">
         </div>
-      </section>
-      <section class="company_info">
+      </div>
+      <div class="company_info">
         <ul class="company_info_list">
           <li class="company_info_item">
             <div>
               <h1 class="title_1">О нас</h1>
-              <p class="company_info_description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+              <p class="company_info_description">Огромный выбор гаджетов не оставит равнодушным гика, который
+                есть
+                в
                 каждом из нас.</p>
               <p class="company_info_description">Мы можем доставить ваш товар в самые отдалённые уголки России
                 транспортными компаниями:</p>
@@ -213,8 +300,8 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="newsletter">
+      </div>
+      <div class="newsletter">
         <div>
           <h1 class="title_1">Подпишитесь на рассылку</h1>
         </div>
@@ -235,7 +322,7 @@
           <img class="icon" src="images/icons/status_success.png" alt="подтверждение выбора" width="16" height="16">
           <p class="newsletter_description">Это бесплатно</p>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="page_footer">
       <div>
