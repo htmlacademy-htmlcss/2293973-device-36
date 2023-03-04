@@ -10,55 +10,39 @@
 
   <body>
     <header class="page_header">
-      <a class="logo_link">
-        <img class="logo" src="images/logo/logo_main.svg" alt="логотип магазина Девайс." width="145" height="36">
-      </a>
-      <div class="header_login_container">
-        <div class="search_field_container">
+      <div class="header_logo_container">
+        <a class="logo_link">
+          <img class="logo" src="images/logo/logo_main.svg" alt="логотип магазина Девайс." width="145" height="36">
+        </a>
+      </div>
+      <div class="header_menu_container">
+        <div class="header_menu_search_container">
           <form class="search_field" action="#" method="get">
-            <input type="text" name="search"
-              style="width:359px; height:40px; background-color: rgba(255, 225, 127, 1); border-radius: 20px 0 0 20px;border-color: rgba(0, 0, 0, 1);">
+            <input class="search_field" type="text" name="search">
           </form>
-          <button class="search_button"
-            style="width:160px; height:40px; background-color: rgba(255, 225, 127, 1); border-radius: 0 20px 20px 0;border-color: rgba(0, 0, 0, 1);">
+          <button class="search_button">
             Найти </button>
         </div>
         <div class="login_logout_container">
-          <ul class="login_list">
-            <li class="login_list_item user_icon">
-              <a class="login_link" href="#">Войти</a>
-            </li>
-            <li class="login_list_item">
-              <a class="visually_hidden" href="#">Выйти</a>
-            </li>
-          </ul>
+          <a class="login_link user_icon" href="#">Войти</a>
+          <a class="login_link visually_hidden" href="#">Выйти</a>
         </div>
         <div class="compare_cart_container">
-          <ul class="login_list">
-            <li class="login_list_item">
-              <a class="login_link" href="#">Сравнить</a>
-            </li>
-            <li class="login_list_item">
-              <a class="login_link" href="#">Корзина</a>
-            </li>
-          </ul>
+          <a class="login_link user_icon" href="#">Сравнить</a>
+          <a class="login_link visually_hidden" href="#">Корзина</a>
         </div>
       </div>
       <div class="navigation_container">
-        <ul class="navigation_list">
-          <li class="navigation_item">
+        <nav class="navigation">
+          <div class="navigation_catalog_container">
             <a class="navigation_link_catalog" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation_item">
+          </div>
+          <div class="navigation_link_container">
             <a class="navigation_link" href="#">Доставка</a>
-          </li>
-          <li class="navigation_item">
             <a class="navigation_link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation_item">
             <a class="navigation_link" href="#">Контакты</a>
-          </li>
-        </ul>
+          </div>
+        </nav>
       </div>
     </header>
     <main class="main_container">
@@ -160,52 +144,50 @@
         <button class="Indicator_list"></button>
         <button class="Indicator_list_checked"></button>
       </div>
-      <div class="product_types_container">
-        <ul class="product_types_list">
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_1.png"
-                alt="Товары категории виртуальная реальность" width="160" height="160">
-              <p>Виртуальная реальность</p>
-            </a>
-          </li>
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_2.png" alt="Товары категории моноподы для селфи."
-                width="160" height="160">
-              <p>Моноподы для селфи</p>
-            </a>
-          </li>
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_3.png" alt="Товары категории Экшн_камеры."
-                width="160" height="160">
-              <p>Экшн-камеры</p>
-            </a>
-          </li>
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_4.png" alt="Товары категории Фитнес_браслеты."
-                width="160" height="160">
-              <p>Фитнес-браслеты</p>
-            </a>
-          </li>
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_5.png" alt="Товары категории Умные часы"
-                width="160" height="160">
-              <p>Умные часы</p>
-            </a>
-          </li>
-          <li class="product_types_item">
-            <a class="product_types_links" href="#">
-              <img class="category_icon" src="images/category/category_6.png" alt="Товары категории Квадрокоптеры"
-                width="160" height="160">
-              <p>Квадрокоптеры</p>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="product_types_list">
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_1.png"
+              alt="Товары категории виртуальная реальность" width="160" height="160">
+            <p>Виртуальная реальность</p>
+          </a>
+        </li>
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_2.png" alt="Товары категории моноподы для селфи."
+              width="160" height="160">
+            <p>Моноподы для селфи</p>
+          </a>
+        </li>
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_3.png" alt="Товары категории Экшн_камеры."
+              width="160" height="160">
+            <p>Экшн-камеры</p>
+          </a>
+        </li>
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_4.png" alt="Товары категории Фитнес_браслеты."
+              width="160" height="160">
+            <p>Фитнес-браслеты</p>
+          </a>
+        </li>
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_5.png" alt="Товары категории Умные часы"
+              width="160" height="160">
+            <p>Умные часы</p>
+          </a>
+        </li>
+        <li class="product_types_item">
+          <a class="product_types_links" href="#">
+            <img class="category_icon" src="images/category/category_6.png" alt="Товары категории Квадрокоптеры"
+              width="160" height="160">
+            <p>Квадрокоптеры</p>
+          </a>
+        </li>
+      </ul>
       <div class="shop_service_container">
         <div class="shop_service_buttons_container">
           <button class="shop_services_button_choosen">Доставка</button>
@@ -262,108 +244,117 @@
         <div class="rare_products_icon">
           <img class="icon" src="images/icons/rare_delivery.svg" alt="Эксклюзиваня доставка" width="47" height="31">
         </div>
-        <h2 class="rare_products_info">Доставим редкий товар под заказ</h2>
-        <div class="rare_products_info">
+        <div class="rare_products_text_container">
+          <h2 class="rare_products_text">Доставим редкий товар под заказ</h2>
+        </div>
+        <div class="rare_products_info_icon">
           <img class="icon" src="images/icons/info.svg" alt="Дополнительная информация" width="40" height="40">
         </div>
       </div>
-      <div class="company_info">
-        <ul class="company_info_list">
-          <li class="company_info_item">
-            <div>
-              <h1 class="title_1">О нас</h1>
-              <p class="company_info_description">Огромный выбор гаджетов не оставит равнодушным гика, который
-                есть
-                в
-                каждом из нас.</p>
-              <p class="company_info_description">Мы можем доставить ваш товар в самые отдалённые уголки России
-                транспортными компаниями:</p>
-              <ul class="company_info_additional_list">
-                <li class="company_info_additional_item"><span>Меловые линии</span></li>
-                <li class="company_info_additional_item"><span>СДИК</span></li>
-                <li class="company_info_additional_item"><span>ТоксБерри</span></li>
-              </ul>
-              <a class="More_info_link" href="#">Подробнее о нас</a>
-            </div>
-          </li>
-          <li class="company_info_item">
-            <div>
-              <h1 class="title_1">Контакты</h1>
-              <p class="company_info_description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
-                проверить работоспособность покупки. </p>
-              <h3 class="title_3">Интернет-магазин «Девайс»</h3>
-              <p class="company_info_description">Санкт-Петербург, набережная реки Карповки, 5, литера П. </p>
-              <a class="company_info_description" href="+78128121212">Тел.: +7(812) 812-12-12</a>
-              <h3 class="title_3">Время работы</h3>
-              <p class="company_info_description">пн—пт: с 10:00 до 22:00</p>
-              <p class="company_info_description">сб—вс: с 10:00 до 19:00</p>
-              <a class="More_info_link" href="#">Напишите Нам</a>
-            </div>
-          </li>
-        </ul>
+      <div class="company_info_container">
+        <div class="about_us_container">
+          <h1 class="title_1">О нас</h1>
+          <p class="company_info_description">Огромный выбор гаджетов не оставит равнодушным гика, который
+            есть
+            в
+            каждом из нас.</p>
+          <p class="company_info_description">Мы можем доставить ваш товар в самые отдалённые уголки России
+            транспортными компаниями:</p>
+          <ul class="company_info_additional_list">
+            <li class="company_info_additional_item"><span>Меловые линии</span></li>
+            <li class="company_info_additional_item"><span>СДИК</span></li>
+            <li class="company_info_additional_item"><span>ТоксБерри</span></li>
+          </ul>
+          <a class="more_info_link" href="#">Подробнее о нас</a>
+        </div>
+        <div class="contacts_container">
+          <h1 class="title_1">Контакты</h1>
+          <p class="company_info_description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
+            проверить работоспособность покупки. </p>
+          <h3 class="title_3">Интернет-магазин «Девайс»</h3>
+          <p class="company_info_description">Санкт-Петербург, набережная реки Карповки, 5, литера П. </p>
+          <a class="company_info_description" href="+78128121212">Тел.: +7(812) 812-12-12</a>
+          <h3 class="title_3">Время работы</h3>
+          <p class="company_info_description">пн—пт: с 10:00 до 22:00</p>
+          <p class="company_info_description">сб—вс: с 10:00 до 19:00</p>
+          <a class="more_info_link" href="#">Напишите Нам</a>
+        </div>
       </div>
-      <div class="newsletter">
-        <div>
-          <h1 class="title_1">Подпишитесь на рассылку</h1>
+
+      <div class="newsletter_container">
+        <div class="newsletter_info">
+          <div class="newsletter_title">
+            <h1 class="title_1">Подпишитесь на рассылку</h1>
+          </div>
+          <div class="newsletter_text">
+            <p class="newsletter_description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
         </div>
-        <div>
-          <p class="newsletter_description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-        <div>
-          <form class="newsletter_form" action="#" method="post">
-            <input class="field" placeholder="Ваш e_mail" type="email" name="newsletter_email" id="newsletter_email"
-              required>
-            <button class="button newsletter_button" type="submit">Подписаться
-            </button>
-          </form>
-        </div>
-        <div>
-          <!--не знаю как это альтануть -->
-          <img class="icon" src="images/icons/status_success.png" alt="подтверждение выбора" width="16" height="16">
-          <p class="newsletter_description">Это бесплатно</p>
+        <div class="newletter_signing_container">
+          <div class="newsletter_signing_input_container">
+            <form class="newsletter_form" action="#" method="post">
+              <input class="field" placeholder="Ваш e_mail" type="email" name="newsletter_email" id="newsletter_email"
+                required>
+              <button class="button newsletter_button" type="submit">Подписаться
+              </button>
+            </form>
+          </div>
+          <div>
+            <p class="newsletter_description">Это бесплатно</p>
+          </div>
         </div>
       </div>
     </main>
     <footer class="page_footer">
-      <div>
-        <img class="footer_logo" src="images/logo/logo_footer.svg" alt="Желтый логотип компании" width="145"
-          height="36">
-        <p class="footer_description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <div class="first_footer_container">
+        <div class="footer_logo_container">
+          <img class="footer_logo" src="images/logo/logo_footer.svg" alt="Желтый логотип компании" width="145"
+            height="36">
+          <p class="footer_description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </div>
       </div>
-      <div>
-        <ul class="footer_list">
-          <li class="footer_item"><a class="footer_link" href="#">Доставка</a></li>
-          <li class="footer_item"><a class="footer_link" href="#">Гарантия</a></li>
-          <li class="footer_item"><a class="footer_link" href="#">Контакты</a></li>
-        </ul>
+      <div class="second_footer_container">
+        <div class="footer_menu">
+          <ul class="footer_list">
+            <li class="footer_item"><a class="footer_link" href="#">Доставка</a></li>
+            <li class="footer_item"><a class="footer_link" href="#">Гарантия</a></li>
+            <li class="footer_item"><a class="footer_link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer_social">
+          <ul class="footer_list">
+            <li class="footer_item">
+              <a class="footer_link" href="#">
+                <img class="social_icon" src="images/icons/telegram.png" alt="Логотип Телеграмма" width="40"
+                  height="40">
+              </a>
+            </li>
+            <li class="footer_item">
+              <a class="footer_link" href="#">
+                <img class="social_icon" src="images/icons/youtube.png" alt="Логотип Ютуба" width="40" height="40">
+              </a>
+            </li>
+            <li class="footer_item">
+              <a class="footer_link" href="#">
+                <img class="social_icon" src="images/icons/twitter.png" alt="Логотип Твиттера" width="40" height="40">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul class="footer_list">
-          <li class="footer_item">
-            <a class="footer_link" href="#">
-              <img class="social_icon" src="images/icons/telegram.png" alt="Логотип Телеграмма" width="40" height="40">
-            </a>
-          </li>
-          <li class="footer_item">
-            <a class="footer_link" href="#">
-              <img class="social_icon" src="images/icons/youtube.png" alt="Логотип Ютуба" width="40" height="40">
-            </a>
-          </li>
-          <li class="footer_item">
-            <a class="footer_link" href="#">
-              <img class="social_icon" src="images/icons/twitter.png" alt="Логотип Твиттера" width="40" height="40">
-            </a>
-          </li>
-        </ul>
+      <div class="third_footer_container">
+        <div class="footer_phone_number_container">
+          <a class="footer_description" href="+78128121212">Тел.: +7(812) 812-12-12</a>
+        </div>
+        <div class="footer_academy_logo_container">
+          <a class="footer_link" href="#">
+            <img class="academy_logo" src="images/logo/logo_academy.svg" alt="Логотип HTML Академии" width="115"
+              height="33">
+          </a>
+        </div>
       </div>
-      <div>
-        <a class="footer_description" href="+78128121212">Тел.: +7(812) 812-12-12</a>
-        <a class="footer_link" href="#">
-          <img class="academy_logo" src="images/logo/logo_academy.svg" alt="Логотип HTML Академии" width="115"
-            height="33">
-        </a>
-      </div>
+
     </footer>
 
   </body>
